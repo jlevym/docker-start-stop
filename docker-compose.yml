@@ -1,9 +1,16 @@
 version: "2"
 services:
   ubuntu:
-    image: "jlevym/ubuntu:v2.02"
+    image: "lergo-sandbox:v1.4"
     volumes:
       - ./volume1:/data
       -  /etc/sudoers.d/90-cloudimg-ubuntu:/etc/sudoers.d/90-cloudimg-ubuntu
       - ./ssh:/home/admin/.ssh
+    command:
+      cat /home/admin/.ssh/config  
+    command: 
+      sudo bash lergo-sandbox 
+
+
+        
     

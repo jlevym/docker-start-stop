@@ -3,5 +3,4 @@ COPY ./volume1 /data
 COPY ./ssh /home/admin/.ssh
 ENV WORKING_DIR /data
 WORKDIR $WORKING_DIR
-RUN echo "accessing lergo-sandbox"
-CMD ["source", "lergo-sandbox"]
+RUN ls -ll

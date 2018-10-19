@@ -1,5 +1,22 @@
 echo "Hi Jeff, this will access lergo sandbox instance:  52.211.75.196 which is your place to play with lergo"
 chmod 600 udemy-ec2-key.pem
-ssh -i udemy-ec2-key.pem ubuntu@52.211.75.196
+echo "finished with chmod 600"
+
+echo "/home/admin/.ssh/config"
+cat /home/admin/.ssh/config
+
+ssh -o StrictHostKeyChecking=no ubuntu@52.211.75.196 uptime
+
+ssh -i udemy-ec2-key.pem ubuntu@52.211.75.196 << EOF
+echo "this should work"
+df -h
+echo "service has been started up"
 sudo service lergo start
+echo "now in sleep mode after starting"
+sleep 60
+echo "stopping lergo service"
+sudo service lergo stop
 exit
+EOF
+
+
