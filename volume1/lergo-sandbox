@@ -1,0 +1,3 @@
+echo "Hi Jeff, this will access lergo sandbox instance:  52.211.75.196 which is your place to play with lergo"
+chmod 600 udemy-ec2-key.pem
+ssh -i udemy-ec2-key.pem ubuntu@52.211.75.196

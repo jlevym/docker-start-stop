@@ -1,0 +1,8 @@
+version: "2"
+services:
+  test-container:
+    build: .
+    volumes:
+      - /home/jeffrey/Docker/ubuntu/volume1:/data
+    ports:
+      - "5001:80"   

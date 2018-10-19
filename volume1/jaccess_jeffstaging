@@ -1,0 +1,5 @@
+echo "Hi Jeff, this will access the aws instance: 52.28.226.213 which is realstaging for lergo"
+
+chmod 600 jeffkey4lergo.pem 
+
+ssh -i jeffkey4lergo.pem ubuntu@52.28.226.213
