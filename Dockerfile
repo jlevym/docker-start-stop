@@ -16,4 +16,5 @@ RUN echo ""
 RUN echo "should see inside lergo-protractor-tests"
 RUN ls -ll
 RUN pwd
+RUN npm install
 
