@@ -9,6 +9,11 @@ RUN ls -ll
 RUN cat ~/.ssh/id_rsa.pub
 
 RUN git clone git@github.com:lergo/lergo-protractor-tests.git
-RUN cd lergo-protractor-tests
-RUN npm install 
+RUN ls -ll
+WORKDIR lergo-protractor-tests
+RUN echo ""
+RUN echo ""
+RUN echo "should see inside lergo-protractor-tests"
+RUN ls -ll
+RUN pwd
 
