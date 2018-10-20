@@ -1,2 +1,2 @@
-# docker-start-stop
-create ubuntu base image fully populated (node, wget, npm etc) and enable lergo stop / start using docker-compose
+# docker-start-stop - branch : promote-staging-build-promote-build
+using new ubuntu base for this branch, without admin user 
